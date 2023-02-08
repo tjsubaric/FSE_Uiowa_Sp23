@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 
-export default class CreateEventForm extends React.Component {
+export default class LoginForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,7 +18,7 @@ export default class CreateEventForm extends React.Component {
     }
 
     handleCreate(event) {
-        alert('Creating Event: ' + this.state.eventName);
+        alert('Logging in: ' + this.state.eventName);
         event.preventDefault();
 
         // TODO: redirect to confirmation page
@@ -109,7 +109,7 @@ export default class CreateEventForm extends React.Component {
                 variant="contained"
                 onClick={this.handleCreate}
               >
-                Create Event
+                Login
               </Button>
             </div>
           </Box>

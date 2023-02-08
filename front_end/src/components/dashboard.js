@@ -9,7 +9,7 @@ const Dashboard = (props) => {
       <Link to="/">Home</Link>
       <Link to="/events">Events</Link>
       <Link to="/tickets">My Tickets</Link>
-      <Link to="/create">Create Event</Link>
+      <Link to="/login">Login</Link>
       {/* <span className="events">{props.events || "Events\n"}</span>
       <span className="my-tickets">{props.myTickets || "My Tickets\n"}</span>
       <span className="create-event">

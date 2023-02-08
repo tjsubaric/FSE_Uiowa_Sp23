@@ -1,7 +1,7 @@
 import * as React from "react";
-import CreateEventForm from "../components/CreateEventForm"
+import LoginForm from "../components/LoginForm"
 
-export default function CreateEvent () {
+export default function Login () {
   return (
     <div
       style={{
@@ -11,8 +11,8 @@ export default function CreateEvent () {
         justifyContent: 'center'
       }}
     >
-      <h2>Create Event</h2>
-      <CreateEventForm />
+      <h2>Login</h2>
+      <LoginForm />
     </div>
   );
 };

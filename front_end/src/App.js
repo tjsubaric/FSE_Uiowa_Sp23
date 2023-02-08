@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import CreateEvent from "./pages/CreateEvent";
+import Login from "./pages/Login";
 import Events from "./pages/Events";
 import MyTicketsPage from "./pages/MyTicketsPage";
-import CreateEventConfirmation from "./pages/CreateEventConfirmation";
+//import CreateEventConfirmation from "./pages/CreateEventConfirmation";
 
 import { createBrowserHistory as history } from "history";
 import Dashboard from "./components/dashboard";
@@ -16,10 +16,9 @@ function App() {
         <Dashboard />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/create" exact component={CreateEvent} />
-          <Route path="/events" exact component={Events} />
-          <Route path="/tickets" exact component={MyTicketsPage} />
-          <Route path="create/confirmation" exact component={CreateEventConfirmation} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/patient" exact component={Events} />
+          <Route path="/doctor" exact component={MyTicketsPage} />
         </Switch>
       </div>
     </Router>
