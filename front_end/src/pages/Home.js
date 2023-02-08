@@ -17,9 +17,9 @@ const Home = () => {
       <br />
       <br />
 
-      <span className="nf-ticket">NFTicket</span>
+      <span className="nf-ticket">FSE Project Home</span>
       <span className="create-events-view-a">
-        Create Events, View and Transfer tickets{" "}
+        Website Motto {" "}
       </span>
       <div className="rectangle-4">
         <span className="website-description">website description</span>
