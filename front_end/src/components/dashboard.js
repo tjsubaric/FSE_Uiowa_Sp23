@@ -7,7 +7,7 @@ const Dashboard = (props) => {
     <nav className={`dashboard-1 ${props.className || ""}`}>
       <div className="rectangle-3">{props.search || "Search"}</div>
       <Link to="/">Home</Link>
-      <Link to="/events">Events</Link>
+      <Link to="/patient">Patient</Link>
       <Link to="/tickets">My Tickets</Link>
       <Link to="/login">Login</Link>
       {/* <span className="events">{props.events || "Events\n"}</span>

@@ -2,7 +2,6 @@ import * as React from "react";
 import "./Event.css";
 import rectangle561 from "../assets/rectangle561.svg";
 import rectangle56 from "../assets/rectangle56.svg";
-// import Dashboard from "./components/dashboard.js";
 const Event = () => {
   const propsData = {
     dashboard: {

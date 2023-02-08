@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
-import "./Events.css";
+import "./Patient.css";
 import polygon1 from "../assets/polygon1.svg";
 import polygon2 from "../assets/polygon2.svg";
 // import Dashboard from "./components/dashboard";
