@@ -8,7 +8,7 @@ export default class CreateEventForm extends React.Component {
 	render() {
 		return (
 
-			
+			//Nothing
 		)
 	}
 }
