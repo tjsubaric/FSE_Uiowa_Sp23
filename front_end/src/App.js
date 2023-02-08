@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Patient from "./pages/Patient";
-//import DoctorHome from "./pages/DoctorHome";
-//import CreateEventConfirmation from "./pages/CreateEventConfirmation";
+import Doctor from "./pages/Doctor";
+//import LoginConfirmation from "./pages/LoginConfirmation";
 import { createBrowserHistory as history } from "history";
 import Dashboard from "./components/dashboard";
 
@@ -17,6 +17,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/login" exact component={Login} />
           <Route path="/patient" exact component={Patient} />
+          <Route path="/doctor" exact component={Doctor} />
         </Switch>
       </div>
     </Router>

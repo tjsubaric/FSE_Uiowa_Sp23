@@ -8,7 +8,7 @@ const Dashboard = (props) => {
       <div className="rectangle-3">{props.search || "Search"}</div>
       <Link to="/">Home</Link>
       <Link to="/patient">Patient</Link>
-      <Link to="/tickets">My Tickets</Link>
+      <Link to="/doctor">Doctor</Link>
       <Link to="/login">Login</Link>
       {/* <span className="events">{props.events || "Events\n"}</span>
       <span className="my-tickets">{props.myTickets || "My Tickets\n"}</span>

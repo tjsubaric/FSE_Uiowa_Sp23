@@ -15,7 +15,7 @@ import "./Patient.css";
 import polygon1 from "../assets/polygon1.svg";
 import polygon2 from "../assets/polygon2.svg";
 // import Dashboard from "./components/dashboard";
-const Events = () => {
+const Patient = () => {
   const propsData = {
     dashboard: {
       dashboard: {
@@ -175,4 +175,4 @@ const Events = () => {
     </div>
   );
 };
-export default Events;
+export default Patient;

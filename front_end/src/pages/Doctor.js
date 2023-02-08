@@ -1,8 +1,8 @@
 import * as React from "react";
-import "./Event.css";
+import "./Doctor.css";
 import rectangle561 from "../assets/rectangle561.svg";
 import rectangle56 from "../assets/rectangle56.svg";
-const Event = () => {
+const Doctor = () => {
   const propsData = {
     dashboard: {
       dashboard: {
@@ -39,4 +39,4 @@ const Event = () => {
     </div>
   );
 };
-export default Event;
+export default Doctor;
