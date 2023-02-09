@@ -1,42 +1,57 @@
-import * as React from "react";
-import "./Doctor.css";
-import rectangle561 from "../assets/rectangle561.svg";
-import rectangle56 from "../assets/rectangle56.svg";
-const Doctor = () => {
-  const propsData = {
-    dashboard: {
-      dashboard: {
-        myTickets: "My Tickets\n",
-        createEvent: "Create Event\n\n",
-        search: "search",
-        events: "Events\n",
-        connectWallet: "Connect Wallet",
-      },
-    },
-  };
+import * as React from 'react';
+import Paper from '@mui/material/Paper';
+import MenuList from '@mui/material/MenuList';
+import MenuItem from '@mui/material/MenuItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import PersonIcon from '@mui/icons-material/Person';
+import MessageIcon from '@mui/icons-material/Message';
+import PhoneIcon from '@mui/icons-material/Phone';
+import SettingsIcon from '@mui/icons-material/Settings';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+
+export default function Patient() {
   return (
-    <div className="event">
-      {/* <Dashboard className="dashboard-instance-1" {...propsData.dashboard} /> */}
-      <div className="flex-container">
-        <div className="rectangle-57">
-          <span className="event-image">Event Image</span>
-        </div>
-        <span className="lolla-pallooza-2026">LollaPallooza 2026</span>
-      </div>
-      <img alt="" className="rectangle-56" src={rectangle56} />
-      <div className="flex-container-1">
-        <img alt="" className="rectangle-56-1" src={rectangle561} />
-        <img alt="" className="rectangle-62" src={rectangle561} />
-        <img alt="" className="rectangle-58" src={rectangle561} />
-        <img alt="" className="rectangle-57-1" src={rectangle561} />
-      </div>
-      <div className="flex-container-2">
-        <img alt="" className="rectangle-63" src={rectangle561} />
-        <img alt="" className="rectangle-59" src={rectangle561} />
-        <img alt="" className="rectangle-61" src={rectangle561} />
-        <img alt="" className="rectangle-60" src={rectangle561} />
-      </div>
-    </div>
+    <Paper sx={{ width: 320 }}>
+      <MenuList dense>
+        <MenuItem>
+          <ListItemIcon>
+            <CalendarMonthIcon/>
+          </ListItemIcon>
+          <ListItemText>Appointments</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <PersonIcon/>
+          </ListItemIcon>
+          <ListItemText>My Patients</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <MessageIcon/>
+          </ListItemIcon>
+          <ListItemText>Chats</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <PhoneIcon/>
+          </ListItemIcon>
+          <ListItemText>Call</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <SettingsIcon/>
+          </ListItemIcon>
+          <ListItemText>Settings</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <PowerSettingsNewIcon/>
+          </ListItemIcon>
+          <ListItemText>Logout</ListItemText>
+        </MenuItem>
+      </MenuList>
+    </Paper>
   );
-};
-export default Doctor;
+}

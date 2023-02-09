@@ -15,6 +15,10 @@ import MedicationIcon from '@mui/icons-material/Medication';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import ArticleIcon from '@mui/icons-material/Article';
+
 
 export default function Patient() {
   return (
@@ -68,6 +72,25 @@ export default function Patient() {
             <HealthAndSafetyIcon/>
           </ListItemIcon>
           <ListItemText>Care Plans</ListItemText>
+        </MenuItem>
+        <Divider />
+        <MenuItem>
+          <ListItemIcon>
+            <AttachMoneyIcon/>
+          </ListItemIcon>
+          <ListItemText>Billing</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <AccessTimeIcon/>
+          </ListItemIcon>
+          <ListItemText>History</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <ArticleIcon/>
+          </ListItemIcon>
+          <ListItemText>Reports</ListItemText>
         </MenuItem>
         <Divider />
         <MenuItem>
