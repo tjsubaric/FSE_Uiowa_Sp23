@@ -12,7 +12,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import TransformText from "../components/TransformText";
+import TransformText from "./TransformText";
 
 export default function Doctor() {
   return (

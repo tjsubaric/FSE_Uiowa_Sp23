@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 
-export default class LoginForm extends React.Component {
+export default class RegisterForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,7 +18,7 @@ export default class LoginForm extends React.Component {
     }
 
     handleCreate(event) {
-        alert('Logging in: ' + this.state.eventName);
+        alert('Registering: ' + this.state.eventName);
         event.preventDefault();
 
         // TODO: redirect to confirmation page
@@ -33,7 +33,6 @@ export default class LoginForm extends React.Component {
           [name]: value
         });
     }
-
 
     render() {
         return (
@@ -60,9 +59,42 @@ export default class LoginForm extends React.Component {
                   marginBottom: '20px',
                 }}
                 required
-                label="Username"
+                label="First Name"
                 variant="filled"
-                name="userName"
+                name="firstName"
+                onChange={this.handleChange}
+              />
+              <TextField
+                style={{
+                  marginTop: '20px',
+                  marginBottom: '20px',
+                }}
+                required
+                label="Last Name"
+                variant="filled"
+                name="lastName"
+                onChange={this.handleChange}
+              />
+              <TextField
+                style={{
+                  marginTop: '20px',
+                  marginBottom: '20px',
+                }}
+                required
+                label="Email Address"
+                variant="filled"
+                name="emailAdd"
+                onChange={this.handleChange}
+              />
+              <TextField
+                style={{
+                  marginTop: '20px',
+                  marginBottom: '20px',
+                }}
+                required
+                label="Date of Birth"
+                variant="filled"
+                name="dob"
                 onChange={this.handleChange}
               />
               <TextField
@@ -76,6 +108,17 @@ export default class LoginForm extends React.Component {
                 name='passWord'
                 onChange={this.handleChange}
               />
+              <TextField
+                style={{
+                  marginTop: '20px',
+                  marginBottom: '20px'
+                }}
+                required
+                label="Confirm Password"
+                variant="filled"
+                name='passWord'
+                onChange={this.handleChange}
+              />
               <Button
                 style={{
                   marginTop: '20px',
@@ -84,7 +127,7 @@ export default class LoginForm extends React.Component {
                 variant="contained"
                 onClick={this.handleCreate}
               >
-                Login
+                Register User
               </Button>
             </div>
           </Box>

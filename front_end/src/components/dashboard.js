@@ -10,6 +10,7 @@ const Dashboard = (props) => {
       <Link to="/patient">Patient</Link>
       <Link to="/doctor">Doctor</Link>
       <Link to="/login">Login</Link>
+      <Link to="/register">Register</Link>
       {/* <span className="events">{props.events || "Events\n"}</span>
       <span className="my-tickets">{props.myTickets || "My Tickets\n"}</span>
       <span className="create-event">
