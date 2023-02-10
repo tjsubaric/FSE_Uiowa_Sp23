@@ -16,7 +16,6 @@ const Home = () => {
     <div className="home">
       <br />
       <br />
-
       <span className="nf-ticket">FSE Project Home</span>
       <span className="create-events-view-a">
         Website Motto {" "}
