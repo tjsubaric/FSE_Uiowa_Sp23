@@ -71,7 +71,7 @@ export default function PatientMenu() {
           <ListItemIcon>
             <FaceIcon/>
           </ListItemIcon>
-          <Link to="/findadoc">Find_a_Doc</Link>
+          <Link to="/findadoc">Find a Doctor</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
@@ -84,13 +84,13 @@ export default function PatientMenu() {
           <ListItemIcon>
             <SettingsIcon/>
           </ListItemIcon>
-          <ListItemText>Settings</ListItemText>
+          <Link to="/settings">Settings</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <PowerSettingsNewIcon/>
           </ListItemIcon>
-          <ListItemText>Logout</ListItemText>
+          <Link to="/logout">Logout</Link>
         </MenuItem>
       </MenuList>
     </Paper>
