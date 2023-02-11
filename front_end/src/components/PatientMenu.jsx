@@ -12,12 +12,10 @@ import FaceIcon from '@mui/icons-material/Face';
 import ScienceIcon from '@mui/icons-material/Science';
 import FilePresentIcon from '@mui/icons-material/FilePresent';
 import MedicationIcon from '@mui/icons-material/Medication';
-import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import ArticleIcon from '@mui/icons-material/Article';
 import { Link } from 'react-router-dom';
 
 
@@ -43,55 +41,43 @@ export default function PatientMenu() {
           </ListItemIcon>
           <Link to="/messages">Messages</Link>
         </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <FaceIcon/>
-          </ListItemIcon>
-          <Link to="/findadoc">Find_a_Doc</Link>
-        </MenuItem>
         <Divider />
         <MenuItem>
           <ListItemIcon>
             <ScienceIcon/>
           </ListItemIcon>
-          <ListItemText>Lab Results</ListItemText>
+          <Link to="/labresults">Lab Results</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <FilePresentIcon/>
           </ListItemIcon>
-          <ListItemText>Medical Records</ListItemText>
+          <Link to="/medrecords">Medical Records</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <MedicationIcon/>
           </ListItemIcon>
-          <ListItemText>Prescriptions</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <HealthAndSafetyIcon/>
-          </ListItemIcon>
-          <ListItemText>Care Plans</ListItemText>
+          <Link to="/prescriptions">Prescriptions</Link>
         </MenuItem>
         <Divider />
         <MenuItem>
           <ListItemIcon>
             <AttachMoneyIcon/>
           </ListItemIcon>
-          <ListItemText>Billing</ListItemText>
+          <Link to="/billing">Billing</Link>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <FaceIcon/>
+          </ListItemIcon>
+          <Link to="/findadoc">Find_a_Doc</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <AccessTimeIcon/>
           </ListItemIcon>
           <ListItemText>History</ListItemText>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <ArticleIcon/>
-          </ListItemIcon>
-          <ListItemText>Reports</ListItemText>
         </MenuItem>
         <Divider />
         <MenuItem>

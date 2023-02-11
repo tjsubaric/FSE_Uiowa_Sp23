@@ -13,8 +13,9 @@ import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import TransformText from "./TransformText";
+import { Link } from 'react-router-dom';
 
-export default function Doctor() {
+export default function DoctorMenu() {
   return (
     <Paper sx={{ width: 320 }}>
       <div style={{
@@ -37,25 +38,25 @@ export default function Doctor() {
           <ListItemIcon>
             <CalendarMonthIcon/>
           </ListItemIcon>
-          <ListItemText>Appointments</ListItemText>
+          <Link to="/myschedule">My Schedule</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <PersonIcon/>
           </ListItemIcon>
-          <ListItemText>My Patients</ListItemText>
+          <Link to="/mypatients">My Patients</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <MessageIcon/>
           </ListItemIcon>
-          <ListItemText>Chats</ListItemText>
+          <Link to="/chats">Chats</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <PhoneIcon/>
           </ListItemIcon>
-          <ListItemText>Call</ListItemText>
+          <Link to="/calls">Calls</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
