@@ -1,5 +1,4 @@
 import * as React from "react";
-import "./dashboard.css";
 import { Link } from "react-router-dom";
 
 const Dashboard = (props) => {
@@ -11,16 +10,6 @@ const Dashboard = (props) => {
       <Link to="/doctor">Doctor</Link>
       <Link to="/login">Login</Link>
       <Link to="/register">Register</Link>
-      {/* <span className="events">{props.events || "Events\n"}</span>
-      <span className="my-tickets">{props.myTickets || "My Tickets\n"}</span>
-      <span className="create-event">
-        {props.createEvent || "Create Event\n\n"}
-      </span> */}
-      <button className="rectangle-2">
-        <span className="connect-wallet">
-          {props.connectWallet || "Connect Wallet"}
-        </span>
-      </button>
     </nav>
   );
 };

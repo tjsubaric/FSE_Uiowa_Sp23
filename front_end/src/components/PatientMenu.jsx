@@ -18,9 +18,10 @@ import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ArticleIcon from '@mui/icons-material/Article';
+import { Link } from 'react-router-dom';
 
 
-export default function Patient() {
+export default function PatientMenu() {
   return (
     <Paper sx={{ width: 320 }}>
       <MenuList dense>
@@ -28,25 +29,25 @@ export default function Patient() {
           <ListItemIcon>
             <HomeIcon/>
           </ListItemIcon>
-          <ListItemText>Home</ListItemText>
+          <Link to="/">Home</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <CalendarTodayIcon/>
           </ListItemIcon>
-          <ListItemText>Appointments</ListItemText>
+          <Link to="/appointments">Appointments</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <MessageIcon/>
           </ListItemIcon>
-          <ListItemText>Messages</ListItemText>
+          <Link to="/messages">Messages</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <FaceIcon/>
           </ListItemIcon>
-          <ListItemText>Find a Doctor</ListItemText>
+          <Link to="/findadoc">Find_a_Doc</Link>
         </MenuItem>
         <Divider />
         <MenuItem>
