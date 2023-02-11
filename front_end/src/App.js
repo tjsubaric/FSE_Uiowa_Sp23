@@ -22,6 +22,10 @@ import My_Patients from "./drPages/My_Patients";
 import Calls from "./drPages/Calls";
 import Chats from "./drPages/Chats";
 
+import SettingsDoc from "./drPages/SettingsDoc";
+import SettingsPat from "./patientPages/SettingsPat";
+import Logout from "./sharedPages/Logout";
+
 function App() {
   return (
     <Router history={history}>
@@ -45,6 +49,10 @@ function App() {
           <Route path="/mypatients" exact component={My_Patients} />
           <Route path="/chats" exact component={Chats} />
           <Route path="/calls" exact component={Calls} />
+
+          <Route path="/settings_doc" exact component={SettingsDoc} />
+          <Route path="/settings" exact component={SettingsPat} />
+          <Route path="/logout" exact component={Logout} />
         </Switch>
     </Router>
   );

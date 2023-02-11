@@ -3,7 +3,7 @@ import Paper from '@mui/material/Paper';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+//import ListItemText from '@mui/material/ListItemText';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import PersonIcon from '@mui/icons-material/Person';
 import MessageIcon from '@mui/icons-material/Message';
@@ -62,13 +62,13 @@ export default function DoctorMenu() {
           <ListItemIcon>
             <SettingsIcon/>
           </ListItemIcon>
-          <ListItemText>Settings</ListItemText>
+          <Link to="/settings_doc">Settings</Link>
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <PowerSettingsNewIcon/>
           </ListItemIcon>
-          <ListItemText>Logout</ListItemText>
+          <Link to="/logout">Logout</Link>
         </MenuItem>
       </MenuList>
     </Paper>
