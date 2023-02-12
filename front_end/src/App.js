@@ -8,6 +8,7 @@ import Register from "./patientPages/Register";
 //import LoginConfirmation from "./pages/LoginConfirmation";
 import { createBrowserHistory as history } from "history";
 import Dashboard from "./components/dashboard";
+import useToken from './components/useToken';
 
 import Appointments from "./patientPages/Appointments";
 import Messages from "./patientPages/Messages";
@@ -26,7 +27,23 @@ import SettingsDoc from "./drPages/SettingsDoc";
 import SettingsPat from "./patientPages/SettingsPat";
 import Logout from "./sharedPages/Logout";
 
+function setToken(userToken){
+  sessionStorage.setItem('token', JSON.stringify(userToken));
+}
+
+function getToken(){
+  const tokenString = sessionStorage.getItem('token')
+  const userToken = JSON.parse(tokenString);
+  return userToken?.token
+}
+
 function App() {
+  const {token, setToken } = useToken();
+
+  if(!token) {
+    return <Login setToken={ setToken } />
+  }
+  
   return (
     <Router history={history}>
         <Dashboard />

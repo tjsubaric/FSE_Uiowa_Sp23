@@ -92,6 +92,17 @@ export default class RegisterForm extends React.Component {
                   marginBottom: '20px',
                 }}
                 required
+                label="Username"
+                variant="filled"
+                name="userAdd"
+                onChange={this.handleChange}
+              />
+              <TextField
+                style={{
+                  marginTop: '20px',
+                  marginBottom: '20px',
+                }}
+                required
                 label="Date of Birth"
                 variant="filled"
                 name="dob"
