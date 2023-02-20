@@ -15,7 +15,6 @@ import MedicationIcon from '@mui/icons-material/Medication';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { Link } from 'react-router-dom';
 
 
@@ -72,12 +71,6 @@ export default function PatientMenu() {
             <FaceIcon/>
           </ListItemIcon>
           <Link to="/findadoc">Find a Doctor</Link>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
-            <AccessTimeIcon/>
-          </ListItemIcon>
-          <ListItemText>History</ListItemText>
         </MenuItem>
         <Divider />
         <MenuItem>
