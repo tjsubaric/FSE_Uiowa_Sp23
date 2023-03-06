@@ -138,7 +138,7 @@ export default class RegisterForm extends React.Component {
                 variant="contained"
                 onClick={this.handleCreate}
               >
-                Register User
+                Register Patient
               </Button>
             </div>
           </Box>
