@@ -6,7 +6,6 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import PersonIcon from '@mui/icons-material/Person';
 import MessageIcon from '@mui/icons-material/Message';
-import SettingsIcon from '@mui/icons-material/Settings';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
@@ -52,12 +51,6 @@ export default function DoctorMenu() {
         </MenuItem>
         <MenuItem>
           <ListItemIcon>
-            <SettingsIcon/>
-          </ListItemIcon>
-          <Link to="/settings_doc">Settings</Link>
-        </MenuItem>
-        <MenuItem>
-          <ListItemIcon>
             <PowerSettingsNewIcon/>
           </ListItemIcon>
           <Link to="/logout">Logout</Link>
@@ -66,16 +59,3 @@ export default function DoctorMenu() {
     </Paper>
   );
 }
-
-/*
-<Stack direction="row" spacing={2}>
-      <Avatar
-        alt="Remy Sharp"
-        src="/static/images/avatar/1.jpg"
-        sx={{ width: 112, height: 112 }}
-      />
-    </Stack>
-    <h1>Dr. Name</h1>
-      <TransformText text="Type of specialist" />
-    </div>
-    */

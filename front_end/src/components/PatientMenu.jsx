@@ -4,15 +4,12 @@ import Divider from '@mui/material/Divider';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import HomeIcon from '@mui/icons-material/Home';
 import MessageIcon from '@mui/icons-material/Message';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import FaceIcon from '@mui/icons-material/Face';
 import ScienceIcon from '@mui/icons-material/Science';
 import FilePresentIcon from '@mui/icons-material/FilePresent';
 import MedicationIcon from '@mui/icons-material/Medication';
-import SettingsIcon from '@mui/icons-material/Settings';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import { Link } from 'react-router-dom';
@@ -22,12 +19,6 @@ export default function PatientMenu() {
   return (
     <Paper sx={{ width: 320 }}>
       <MenuList dense>
-        <MenuItem>
-          <ListItemIcon>
-            <HomeIcon/>
-          </ListItemIcon>
-          <Link to="/">Home</Link>
-        </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <CalendarTodayIcon/>
@@ -73,12 +64,6 @@ export default function PatientMenu() {
           <Link to="/findadoc">Find a Doctor</Link>
         </MenuItem>
         <Divider />
-        <MenuItem>
-          <ListItemIcon>
-            <SettingsIcon/>
-          </ListItemIcon>
-          <Link to="/settings">Settings</Link>
-        </MenuItem>
         <MenuItem>
           <ListItemIcon>
             <PowerSettingsNewIcon/>
