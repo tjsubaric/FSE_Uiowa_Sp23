@@ -10,9 +10,9 @@ public class databaseFunctions {
     //Main function used for quick testing
     public static void main(String[] args){
         
-        //add_Patient("testpatuser", "testpatpass", "Sick", "Person", "IamVerysick@gmail.com", "2000-01-28");
-        //add_Doctor("docusertest", "docpasstest", "docNameTest", "testSpecialty", "test@email.com");
-        /* 
+        add_Patient("testpatuser", "testpatpass", "Sick", "Person", "IamVerysick@gmail.com", "2000-01-28");
+        add_Doctor("docusertest", "docpasstest", "docNameTest", "testSpecialty", "test@email.com");
+        
         System.out.println("Connecting database...");
 
         try (Connection connection = DriverManager.getConnection(url, user, pass)) {
@@ -21,7 +21,6 @@ public class databaseFunctions {
         catch (SQLException e) {
             throw new IllegalStateException("Cannot connect the database!", e);
         }
-        */
     }
 
     //Function used to create Admins
