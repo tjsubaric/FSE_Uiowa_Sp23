@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./sharedPages/Login";
 import Patient from "./components/PatientMenu";
@@ -16,7 +15,6 @@ import Billing from "./patientPages/Billing";
 import My_Schedule from "./drPages/My_Schedule";
 import My_Patients from "./drPages/My_Patients";
 import Chats from "./drPages/Chats";
-import Logout from "./sharedPages/Logout";
 
 function App() {
   
@@ -39,7 +37,6 @@ function App() {
           <Route path="/myschedule" exact component={My_Schedule} />
           <Route path="/mypatients" exact component={My_Patients} />
           <Route path="/chats" exact component={Chats} />
-          <Route path="/logout" exact component={Logout} />
         </Switch>
     </Router>
   );
