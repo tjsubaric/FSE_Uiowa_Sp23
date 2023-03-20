@@ -9,7 +9,6 @@ import MessageIcon from '@mui/icons-material/Message';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import TransformText from "./TransformText";
 import { Link } from 'react-router-dom';
 
 export default function DoctorMenu() {
@@ -28,7 +27,6 @@ export default function DoctorMenu() {
       />
     </Stack>
     <h1>Dr. Name</h1>
-      <TransformText text="Type of specialist" />
     </div>
       <MenuList dense>
         <MenuItem>
