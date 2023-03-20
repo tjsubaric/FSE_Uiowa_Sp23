@@ -63,7 +63,6 @@ export default function PatientMenu() {
           </ListItemIcon>
           <Link to="/findadoc">Find a Doctor</Link>
         </MenuItem>
-        <Divider />
         <MenuItem>
           <ListItemIcon>
             <PowerSettingsNewIcon/>
@@ -71,6 +70,7 @@ export default function PatientMenu() {
           <Link to="/logout">Logout</Link>
         </MenuItem>
       </MenuList>
+      <Divider />
     </Paper>
   );
 }
