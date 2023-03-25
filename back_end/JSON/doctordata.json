@@ -3,17 +3,17 @@
         {
             "name": "Cindy Chu",
             "specialty": "Radiology",
-            "profilepicture": "./images/CindyChu.jpg"
+            "profilepicture": "CindyChu.jpg"
         },
         {
             "name": "John Hartford",
             "specialty": "Family Medicine",
-            "profilepicture": "./images/JohnHarford.jpg"
+            "profilepicture": "JohnHarford.jpg"
         },
         {
             "name": "Thomas Kelly",
             "specialty": "Endocrinology",
-            "profilepicture": "./images/ThomasKelly.jpg"
+            "profilepicture": "ThomasKelly.jpg"
         }
 
     ]

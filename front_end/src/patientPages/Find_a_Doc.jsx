@@ -46,7 +46,7 @@ export default function Find_Doctor() {
                     <CardMedia
                       component="img"
                       height="200"
-                      src = {doctor.profilepicture}
+                      src = {`http://localhost:3000/${doctor.profilepicture}`}
                       alt= {doctor.name}
                     />
                     <CardContent>
