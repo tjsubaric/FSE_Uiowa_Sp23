@@ -9,9 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "@openzeppelin/contracts": "^4.8.1",
     "hardhat": "^2.12.6",
     "web3.storage": "^4.4.0"
+<<<<<<< Updated upstream
+=======
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "range-parser": "^1.2.1",
+    "sequelize": "^6.29.3"
+>>>>>>> Stashed changes
   }
 }
